@@ -1,4 +1,4 @@
-from   从 fastapi import   进口 FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from .decrypt_service import URLDecryptService
 
@@ -24,4 +24,3 @@ async def health_check():
     健康检查接口
     """
     return {"status": "healthy"} 
-
